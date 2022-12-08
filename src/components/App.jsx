@@ -1,20 +1,10 @@
 import React from "react";
 import { useState } from "react";
-import Entry from "./Entry";
 import countryCodes from "../countryCodes"
-import SearchBar from "./SearchBar";
 import "./App.css"
 
 
 
-function createCard(countryEntry) {
-    return (
-        <Entry country={countryEntry.country}
-        phoneCode={countryEntry.phone_code}
-        key={countryEntry.id}
-        />
-    )
-}
 
 function App() {
     const [searchTerm, setSearchTerm] = useState('')
@@ -33,13 +23,6 @@ function App() {
                 }
             }).map((val, key)=> {
                 return (
-                    // <div class="card">
-                    // <img src="img_avatar.png" alt="Avatar" style="width:100%">
-                    // <div class="container">
-                    //   <h4><b>John Doe</b></h4>
-                    //   <p>Architect & Engineer</p>
-                    // </div>
-                //   </div>
                 <div className="card">
                 <div className="container">
                 <p>{val.country} {val.phone_code}</p>
