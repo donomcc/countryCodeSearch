@@ -300,56 +300,6 @@ const countryCodes = [
     phone_code: "+33",
   },
   {
-    id: 51,
-    country: "Ecuador",
-    phone_code: "+593",
-  },
-  {
-    id: 52,
-    country: "Egypt",
-    phone_code: "+20",
-  },
-  {
-    id: 53,
-    country: "El Salvador",
-    phone_code: "+503",
-  },
-  {
-    id: 54,
-    country: "Equatorial Guinea",
-    phone_code: "+240",
-  },
-  {
-    id: 55,
-    country: "Eritrea",
-    phone_code: "+291",
-  },
-  {
-    id: 56,
-    country: "Estonia",
-    phone_code: "+372",
-  },
-  {
-    id: 57,
-    country: "Ethiopia",
-    phone_code: "+251",
-  },
-  {
-    id: 58,
-    country: "Fiji",
-    phone_code: "+679",
-  },
-  {
-    id: 59,
-    country: "Finland",
-    phone_code: "+358",
-  },
-  {
-    id: 60,
-    country: "France",
-    phone_code: "+33",
-  },
-  {
     id: 61,
     country: "Gabon",
     phone_code: "+241",
