@@ -14,7 +14,11 @@
     padding-left: 10px;
 }
 
-p {
+.credit {
+    font-size: 12px;
+  }
+
+.detail {
     margin: 10px;
     font-size: 18px;
 }
@@ -39,3 +43,4 @@ p {
   .container {
     padding: 2px 16px;
   }
+

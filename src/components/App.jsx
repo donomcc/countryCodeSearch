@@ -25,11 +25,16 @@ function App() {
                 return (
                 <div className="card">
                 <div className="container">
-                <p>{val.country} {val.phone_code}</p>
+                <p className="detail">{val.country} {val.phone_code}</p>
                 </div>
                 </div>
                 )
             })}
+            <div className="credit">
+                <p>
+                    Created by Donovan McCollum
+                </p>
+            </div>
         </div>
       );
     }
