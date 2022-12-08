@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/countryCodeSearch/static/css/main.faf8321d.css",
+    "main.js": "/countryCodeSearch/static/js/main.811da7cc.js",
+    "index.html": "/countryCodeSearch/index.html",
+    "main.faf8321d.css.map": "/countryCodeSearch/static/css/main.faf8321d.css.map",
+    "main.811da7cc.js.map": "/countryCodeSearch/static/js/main.811da7cc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.faf8321d.css",
+    "static/js/main.811da7cc.js"
+  ]
+}
