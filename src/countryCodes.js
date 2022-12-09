@@ -26,7 +26,7 @@ const countryCodes = [
   },
   {
     id: 6,
-    country: "Antigua & Deps",
+    country: "Antigua & Barbuda",
     phone_code: "+1",
   },
   {

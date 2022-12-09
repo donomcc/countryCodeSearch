@@ -2,19 +2,36 @@ import React from "react";
 import { useState } from "react";
 import countryCodes from "../countryCodes"
 import "./App.css"
-
+import {CopyToClipboard} from 'react-copy-to-clipboard'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Success from "./Success";
 
 
 
 function App() {
     const [searchTerm, setSearchTerm] = useState('')
+    const notify = () => {
+        toast.success('Copied to clipboard', {
+            position: "top-right",
+            autoClose: 1200,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            });
+    }
     return (
         <div className="App">
           <h1>
-            <span>Country Phone Codes</span>
+            <span>Country Phone Code Search</span>
           </h1>
+          <p>
+            <span>Click the card to quickly copy the phone code!</span>
+          </p>
             <input type="text" placeholder="Search..." onChange={event => {setSearchTerm(event.target.value)}} />
-            {/* {countryCodes.map(createCard)} */}
             {countryCodes.filter((val)=> {
                 if (searchTerm == "") {
                     return val
@@ -25,11 +42,26 @@ function App() {
                 return (
                 <div className="card">
                 <div className="container">
-                <p className="detail">{val.country} {val.phone_code}</p>
+                <CopyToClipboard text={val.phone_code}>
+                <p className="detail" onClick={notify}>{val.country} {val.phone_code}</p>
+                </CopyToClipboard>
                 </div>
                 </div>
                 )
             })}
+            <ToastContainer
+                position="top-right"
+                autoClose={1200}
+                limit={1}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss={false}
+                draggable
+                pauseOnHover={false}
+                theme="light"
+            />
             <div className="credit">
                 <p>
                     Created by Donovan McCollum

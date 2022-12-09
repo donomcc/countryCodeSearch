@@ -4,6 +4,7 @@ body {
     line-height: 1.666;
     background: rgb(0, 0, 0);
     color: white;
+    scrollbar-width: none;
   }
   
   h1 {
