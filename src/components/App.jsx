@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { useEffect } from 'react'
 import countryCodes from "../countryCodes"
 import "./App.css"
 import {CopyToClipboard} from 'react-copy-to-clipboard'
@@ -11,8 +12,9 @@ import Success from "./Success";
 
 function App() {
     const [searchTerm, setSearchTerm] = useState('')
-    const notify = () => {
-        toast.success('Copied to clipboard', {
+    const [selectedCountry, setSelectedCountry] = useState('')
+    const notify = (selectedCountry) => {
+        toast.success(selectedCountry + ` copied to clipboard`, {
             position: "top-right",
             autoClose: 1200,
             hideProgressBar: false,
@@ -21,7 +23,8 @@ function App() {
             draggable: true,
             progress: undefined,
             theme: "light",
-            });
+        }
+        );
     }
     return (
         <div className="App">
@@ -43,7 +46,11 @@ function App() {
                 <div className="card">
                 <div className="container">
                 <CopyToClipboard text={val.phone_code}>
-                <p className="detail" onClick={notify}>{val.country} {val.phone_code}</p>
+                {/* Why is there a delay when updating the state? It's always 1 click behind. */}
+                <p className="detail" onClick={()=> {
+                    setSelectedCountry(val.phone_code);
+                    notify(val.phone_code);
+                    }}>{val.country} {val.phone_code}</p>
                 </CopyToClipboard>
                 </div>
                 </div>

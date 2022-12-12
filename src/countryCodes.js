@@ -396,7 +396,7 @@ const countryCodes = [
   },
   {
     id: 80,
-    country: "Ireland {Republic}",
+    country: "Ireland",
     phone_code: "+353",
   },
   {
@@ -446,12 +446,12 @@ const countryCodes = [
   },
   {
     id: 90,
-    country: "Korea North",
+    country: "North Korea",
     phone_code: "+850",
   },
   {
     id: 91,
-    country: "Korea South",
+    country: "South Korea",
     phone_code: "+82",
   },
   {
@@ -606,7 +606,7 @@ const countryCodes = [
   },
   {
     id: 122,
-    country: "Myanmar, {Burma}",
+    country: "Myanmar (Burma)",
     phone_code: "+95",
   },
   {
@@ -896,91 +896,86 @@ const countryCodes = [
   },
   {
     id: 180,
-    country: "Trinidad & Tobago",
-    phone_code: "+1",
-  },
-  {
-    id: 181,
     country: "Tunisia",
     phone_code: "+216",
   },
   {
-    id: 182,
+    id: 181,
     country: "Turkey",
     phone_code: "+90",
   },
   {
-    id: 183,
+    id: 182,
     country: "Turkmenistan",
     phone_code: "+993",
   },
   {
-    id: 184,
+    id: 183,
     country: "Tuvalu",
     phone_code: "+688",
   },
   {
-    id: 185,
+    id: 184,
     country: "Uganda",
     phone_code: "+256",
   },
   {
-    id: 186,
+    id: 185,
     country: "Ukraine",
     phone_code: "+380",
   },
   {
-    id: 187,
+    id: 186,
     country: "United Arab Emirates",
     phone_code: "+971",
   },
   {
-    id: 188,
+    id: 187,
     country: "United Kingdom",
     phone_code: "+44",
   },
   {
-    id: 189,
+    id: 188,
     country: "United States",
     phone_code: "+1",
   },
   {
-    id: 190,
+    id: 189,
     country: "Uruguay",
     phone_code: "+598",
   },
   {
-    id: 191,
+    id: 190,
     country: "Uzbekistan",
     phone_code: "+998",
   },
   {
-    id: 192,
+    id: 191,
     country: "Vanuatu",
     phone_code: "+678",
   },
   {
-    id: 193,
+    id: 192,
     country: "Vatican City",
     phone_code: "+39",
   },
   {
-    id: 194,
+    id: 193,
     country: "Venezuela",
     phone_code: "+58",
   },
   {
-    id: 195,
+    id: 194,
     country: "Vietnam",
     phone_code: "+84",
   },
   {
-    id: 196,
+    id: 195,
     country: "Yemen",
     phone_code: "+967",
   },
   {
-    id: 197,
+    id: 196,
     country: "Zambia",
     phone_code: "+260",
   },
