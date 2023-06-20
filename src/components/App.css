@@ -1,54 +1,74 @@
 .App {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-    scrollbar-width: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  scrollbar-width: none;
+  margin: 0px;
+  background-color: white;
 }
 
 .App input {
-    margin-top: 20px;
-    width: 300px;
-    height: 40px;
-    font-size: 20px;
-    padding-left: 10px;
+  margin-top: 20px;
+  width: 300px;
+  height: 40px;
+  font-size: 20px;
+  padding-left: 10px;
 }
 
 .credit {
-    font-size: 12px;
-  }
+  font-size: 12px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
 
 .detail {
-    margin: 10px;
-    font-size: 18px;
+  margin: 10px;
+  font-size: 18px;
+}
+
+.searchbar {
+  margin-bottom: 15px;
 }
 
 .card {
-    /* Add shadows to create the "card" effect */
-    width: 300px;
-    text-align: center;
-    margin-top: 8px;
-    background-color: gray;
-    color: white;
-    /* box-shadow: inset 0 0 0 0 #939394; */
-    /* color: #9d9e9f; */
-    /* margin: 0 -.25rem;
-    padding: 0 .25rem; */
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-  }
-  
-  /* On mouse-over, add a deeper shadow */
-  .card:hover {
-    box-shadow: inset 300px 0 0 0 #313131;
-    color: white;
-    cursor: pointer ;
-  }
-  
-  /* Add some padding inside the card container */
-  .container {
-    padding: 2px 16px;
-  }
+  /* margin-top: 8px; */
+  display: flex;
+  background-color: gray;
+  color: white;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-top: 8px;
+  /* text-align: center; */
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 50px;
+  border: solid black 2px;
+}
 
-  
+.card:hover {
+  box-shadow: inset 300px 0 0 0 #313131;
+  color: white;
+  cursor: pointer;
+}
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials a {
+  padding: 6px;
+}

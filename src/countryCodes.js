@@ -365,6 +365,11 @@ const countryCodes = [
     phone_code: "+504",
   },
   {
+    id: 197,
+    country: "Hong Kong",
+    phone_code: "+852",
+  },
+  {
     id: 74,
     country: "Hungary",
     phone_code: "+36",
