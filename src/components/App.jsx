@@ -1,11 +1,16 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import countryCodes from "../countryCodes";
 import "./App.css";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { SiLinkedin, SiGithub } from "react-icons/si";
+
+import ReactGA from "react-ga4";
+
+const MEASUREMENT_ID = "G-K2FVESQZ3W";
+ReactGA.initialize(MEASUREMENT_ID);
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -22,6 +27,14 @@ function App() {
       theme: "light",
     });
   };
+
+  useEffect(() => {
+    ReactGA.send({
+      hitType: "pageview",
+      page: window.location.pathname + window.location.search,
+    });
+  }, []);
+
   return (
     <div className="App">
       <h1>
@@ -56,6 +69,12 @@ function App() {
               <p
                 className="detail"
                 onClick={() => {
+                  ReactGA.event({
+                    category: "phone code",
+                    action: "click",
+                    label: "test label",
+                    value: val.country,
+                  });
                   setSelectedCountry(val.phone_code);
                   notify(val.phone_code);
                 }}
