@@ -72,8 +72,8 @@ function App() {
                   ReactGA.event({
                     category: "phone code",
                     action: "click",
-                    label: "test label",
-                    value: val.country,
+                    label: val.country,
+                    value: val.id,
                   });
                   setSelectedCountry(val.phone_code);
                   notify(val.phone_code);
