@@ -70,9 +70,9 @@ function App() {
                 className="detail"
                 onClick={() => {
                   ReactGA.event({
-                    category: val.country,
-                    action: "click",
-                    label: val.id + val.country,
+                    category: "Country code click",
+                    action: val.country,
+                    label: `+${val.id} ` + val.country,
                     value: val.id,
                   });
                   setSelectedCountry(val.phone_code);
